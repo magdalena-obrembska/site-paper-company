@@ -1,0 +1,379 @@
+body{margin:0; padding:0; box-sizing:border-box;
+height: 120vh;
+font-family: 'Oswald', sans-serif;
+max-width: 1440px;
+background-color: grey;}
+.desc{
+  display: block;
+  color: white;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right: 100px;
+  letter-spacing: 2px;
+}
+.dropdown-item{
+color: royalblue;
+font-size: 1em;
+}
+.btn{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav.navbar{
+background-color: rgba(0, 0, 0, 60%);
+position: fixed;
+top: 0;
+left: 0;
+height: 15vh;
+width: 100%;
+padding: 10px 24px;
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header{
+  background-image: url('paper.jpg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1{
+align-self:center;
+color: white;
+letter-spacing: 4px;
+font-size: 80px;
+}
+.main{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+}
+.container{
+  flex-grow: 1;
+  flex-basis: 60%;
+  background-color: rgba(50, 20, 150, .4);
+  height:65vh;
+  padding: 10px 40px;
+}
+.form-control{
+  width:50%;
+}
+label:nth-of-type(1){
+  margin-top: 10px;
+}
+label{
+  font-size: 20px;
+}
+.contact{
+  flex-grow: 1;
+  flex-basis: 40%;
+  background-color: grey;
+  height:65vh;
+  padding: 50px;
+}
+i, p{
+  color:white;
+}
+i{
+  font-size: 40px;
+  margin-right: 20px;
+}
+p{
+  font-size: 30px;
+  transition: .8s;
+  margin-bottom: 40px;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+p:hover{
+  color: purple;
+  border-bottom:2px solid purple;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+.tele{
+  display:inline-block;
+
+}
+a.tele{
+  text-decoration:none;
+    transition: .8s;
+    text-transform: lowercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color:white;
+}
+
+a.tele:hover{
+  color:purple;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+footer{
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+  /*galaxyIII portrait
+@media(max-width:360px){
+      nav.navbar{
+      height: 15vh;
+      width: 100%;
+      padding-left:100px;
+      }
+      .desc{
+        flex-wrap:wrap;
+        font-size: 10px;
+        padding: 2px;
+        margin: 0;
+      }
+      .btn{
+      visibility: hidden;
+      }
+      h1{
+        font-size: 35px;
+      }
+      .main{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+      }
+      .container{
+        flex-grow: 1;
+        flex-basis: 30%;
+        background-color: rgba(50, 20, 150, .4);
+        width:100%;
+        padding: 10px 30px;
+      }
+      .form-control{
+        width:40%;
+        height: 8px;
+      }
+      textarea{
+        max-height: 20px;
+      }
+      label:nth-of-type(1){
+        margin-top: 5px;
+      }
+      label, i{
+        font-size: 10px;
+      }
+      .contact{
+        flex-grow: 1;
+        flex-basis: 30%;
+        background-color: grey;
+        width:100%;
+        padding:20px;
+      }
+      i{
+        font-size: 8px;
+        margin-right: 5px;
+        padding:5px;
+      }
+      p{
+        font-size: 15px;
+        transition: .8s;
+        margin-bottom: 5px;
+        text-transform: lowercase;
+        letter-spacing: none;
+      }
+
+      .tele{
+        display:inline-block;
+      }
+      a.tele{
+        text-decoration:none;
+          transition: .8s;
+          text-transform: lowercase;
+          font-size: 10px;
+          letter-spacing: none;
+          color:white;
+      }
+
+      a.tele:hover{
+        color:purple;
+        font-size: 10px;
+        letter-spacing: none;
+        border: 2px solid purple;
+      }
+      footer{
+        width: 100%;
+        height: 5vh;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+    /*nokia lumia*/
+      @media(max-width:640px){
+
+        nav.navbar{
+        height: 25vh;
+        width: 100%;
+        padding-left:100px;
+        }
+        .desc{
+          flex-wrap:wrap;
+          font-size: 12px;
+          padding: 2px;
+          margin: 0;
+
+        }
+        .btn{
+        visibility: hidden;
+        font-size: 8px;
+        }
+        h1{
+          font-size: 45px;
+        }
+        .main{
+          display:flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: stretch;
+          width: 100%;
+        }
+        .container{
+          flex-grow: 1;
+          flex-basis: 60%;
+          background-color: rgba(50, 20, 150, .4);
+          height:60vh;
+          padding: 10px 30px;
+        }
+        .form-control{
+          width:40%;
+          height: 8px;
+        }
+        textarea{
+          max-height: 20px;
+        }
+        label:nth-of-type(1){
+          margin-top: 5px;
+        }
+        label, i{
+          font-size: 10px;
+        }
+        .contact{
+          flex-grow: 1;
+          flex-basis: 40%;
+          background-color: grey;
+          height:60vh;
+          padding:20px;
+        }
+
+        i{
+          font-size: 8px;
+          margin-right: 5px;
+          padding:5px;
+        }
+        p{
+          font-size: 15px;
+          transition: .8s;
+          margin-bottom: 5px;
+          text-transform: lowercase;
+          letter-spacing: none;
+        }
+
+        .tele{
+          display:inline-block;
+        }
+        a.tele{
+          text-decoration:none;
+            transition: .8s;
+            text-transform: lowercase;
+            font-size: 15px;
+            letter-spacing: none;
+            color:white;
+        }
+
+        a.tele:hover{
+          color:purple;
+          font-size: 10px;
+          letter-spacing: none;
+          border: 2px solid purple;
+        }
+        footer{
+          width: 100%;
+          height: 5vh;
+          background-color: rgba(0, 0, 0, .8);
+          color: white;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+
+      /*ipad portrait*/
+        @media(max-width: 768px nad portrait){
+          a.tele{
+            font-size: 8px;
+            text-align: center;
+          }
+          .desc{
+            font-size: 8px;
+          }
+          nav.navbar{
+            height:10vh;
+            background-color: black;
+          }
+          p, i{
+            font-size: 8px;
+            transition: .8s;
+            margin-bottom: 20px;
+            letter-spacing: none;
+          }
+        }
+    @media(max-width: 800px nad portrait)
+    {
+      h1{
+        font-size: 60px;
+      }
+      nav.navbar{
+        height:25vh;
+        background-color: black;
+        }
+  .desc{
+    font-size: 16px;
+    color: white;
+    margin-right: 60px;
+    letter-spacing:2px;}
+    textarea{
+      max-height: 40px;
+    }    }
+    /*ipad laptop*/
+    @media(max-width: 1024px and landscape)
+    {nav.navbar{
+      height:10vh;
+      }}
+    /*responsywność dla desktopu*/
+    @media(max-width: 1440px){
+    nav.navbar{
+      height:10vh;
+        background-color: black;    }
+    }
+.btn{
+  visibility: visible;
+}
