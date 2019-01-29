@@ -169,7 +169,7 @@ footer{
 
         }
         }
-    @media(max-width: 800px nad portrait)
+    @media(max-width: 800px) and (orientation: portrait)
     {
       h1{
         font-size: 60px;
@@ -187,7 +187,7 @@ footer{
       max-height: 40px;
     }    }
     /*ipad laptop*/
-    @media(max-width: 1024px and landscape)
+    @media(max-width: 1024px) and (orientation: landscape)
     {nav.navbar{
       height:10vh;
       }}
