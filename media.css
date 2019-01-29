@@ -135,99 +135,7 @@ footer{
   text-align: center;
 }
 
-  /*galaxyIII portrait
-@media(max-width:360px){
-      nav.navbar{
-      height: 15vh;
-      width: 100%;
-      padding-left:100px;
-      }
-      .desc{
-        flex-wrap:wrap;
-        font-size: 10px;
-        padding: 2px;
-        margin: 0;
-      }
-      .btn{
-      visibility: hidden;
-      }
-      h1{
-        font-size: 35px;
-      }
-      .main{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: stretch;
-        width: 100%;
-      }
-      .container{
-        flex-grow: 1;
-        flex-basis: 30%;
-        background-color: rgba(50, 20, 150, .4);
-        width:100%;
-        padding: 10px 30px;
-      }
-      .form-control{
-        width:40%;
-        height: 8px;
-      }
-      textarea{
-        max-height: 20px;
-      }
-      label:nth-of-type(1){
-        margin-top: 5px;
-      }
-      label, i{
-        font-size: 10px;
-      }
-      .contact{
-        flex-grow: 1;
-        flex-basis: 30%;
-        background-color: grey;
-        width:100%;
-        padding:20px;
-      }
-      i{
-        font-size: 8px;
-        margin-right: 5px;
-        padding:5px;
-      }
-      p{
-        font-size: 15px;
-        transition: .8s;
-        margin-bottom: 5px;
-        text-transform: lowercase;
-        letter-spacing: none;
-      }
 
-      .tele{
-        display:inline-block;
-      }
-      a.tele{
-        text-decoration:none;
-          transition: .8s;
-          text-transform: lowercase;
-          font-size: 10px;
-          letter-spacing: none;
-          color:white;
-      }
-
-      a.tele:hover{
-        color:purple;
-        font-size: 10px;
-        letter-spacing: none;
-        border: 2px solid purple;
-      }
-      footer{
-        width: 100%;
-        height: 5vh;
-        background-color: rgba(0, 0, 0, .8);
-        color: white;
-        font-size: 10px;
-        text-align: center;
-      }
-    }
     /*nokia lumia*/
       @media(max-width:640px){
 
@@ -327,7 +235,7 @@ footer{
       }
 
       /*ipad portrait*/
-        @media(max-width: 768px nad portrait){
+        @media(max-width: 768px) and (orientation: portrait){
           a.tele{
             font-size: 8px;
             text-align: center;
@@ -346,7 +254,7 @@ footer{
             letter-spacing: none;
           }
         }
-    @media(max-width: 800px nad portrait)
+    @media(max-width: 800px) and (orientation: portrait)
     {
       h1{
         font-size: 60px;
@@ -364,7 +272,7 @@ footer{
       max-height: 40px;
     }    }
     /*ipad laptop*/
-    @media(max-width: 1024px and landscape)
+    @media(max-width: 1024px) and (orientation: landscape)
     {nav.navbar{
       height:10vh;
       }}
